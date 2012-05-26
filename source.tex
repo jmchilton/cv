@@ -1,0 +1,175 @@
+\documentclass[margin,line]{res}
+\usepackage{ifthen}
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.0in
+\itemsep=0in
+\parsep=0in
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+\newboolean{isResume}
+
+\begin{document}
+
+\setboolean{isResume}{IS_RESUME}
+
+\name{John Chilton \vspace*{.1in}}
+
+\begin{resume}
+\section{\sc Contact Information}
+\vspace{.05in}
+\begin{tabular}{@{}p{3in}p{4in}}
+4145 Monroe St NE             & {\it Phone:}  +1-612-226-9223\\            
+Columbia Heights, MN, 55421   & {\it E-mail:}  jmchilton@gmail.com \\
+{\it WWW:} www.jmchilton.net  & \\     
+\end{tabular}
+
+\ifthenelse{\boolean{isResume}}
+{
+\section{\sc Objectives}
+Obtain a challenging job in software development.
+}
+{
+\section{\sc Research Interests}
+%Computer Science Education and Techniques for Engaging Students in Programming Courses, Robotics Education, Functional and Domain-Specific Programming Languages, Machine Learning and its Applications to Bioinformatics
+Machine Learning and its Applications to Bioinformatics, Computer Science Education and Techniques for Engaging Students in Programming Courses
+}
+
+\section{\sc Education}
+{\bf University of Minnesota}, Minneapolis, Minnesota USA\\
+{\em Department of Computer Science and Engineering} 
+\vspace*{.1in}
+\begin{list1}
+\item[] M.S., Computer Science, 2005-2007
+\begin{list2}
+\item Grade Point Average: 4.00 out of 4.00
+\end{list2}
+\end{list1}
+\vspace*{.1in}
+\begin{list1}
+\item[] B.S., Computer Science,  2001-2005
+\begin{list2}
+\item Graduated with High Distinction
+\item Minors in Mathematics and Statistics
+\item Grade Point Average: 3.99 out of 4.00
+%\item Wallin Scholar 
+\end{list2}
+\end{list1}
+
+
+{\section{\sc Experience}}
+{\bf University of Minnesota}, Minneapolis, Minnesota USA
+
+\vspace{-.3cm}
+\vspace{-.1cm}{\em Senior Software Developer} \hfill {\bf 2012 - Present}\\
+{\em Software Developer} \hfill {\bf 2007 - 2012}\\
+Involved in every stage of the software life cycle for several succesful projects. As part of the TROPIX
+project, I built a Web Services infrastructure enabling collaboration between researchers at the
+University of Minnesota (UofM) and the Mayo Clinic and developed many supporting components
+including a file and metadata store, analytical services, a workflow engine, and a Google Web Toolkit
+frontend. In another collaborative project with the Mayo Clinic, I developed a secure distributed
+system for sharing clinical data powered by Web Services and a Groovy on Grails frontend. I
+completed a project to enable secure job submissions to Windows clusters via ASP.NET Web Services
+implemented in C\#. I have been involved in the deployment, maintenance, and extension of an open
+source Python framework for genomics research called Galaxy.
+
+{\em Teaching Assistant} \hfill {\bf Fall 2003  - Summer 2007}\\
+Duties at various times included grading, holding office hours,
+assignment design, and leading discussions and lecturing in both
+computer lab and classroom setings for groups of students ranging in
+size from 3 to 120.
+
+\vspace{-.1cm}
+{\em Research Assistant - Robotics} \hfill {\bf Fall 2005 - Fall 2006}\\
+Worked on various projects as a member of the University of Minnesota
+Multiple Autonomous Robotic Systems laboratory. Including work as part
+of a grant from NASA to develop a C++ application for mobile
+robot localization and mapping.
+
+\vspace{-.1cm}
+{\em Research Assistant - College Education} \hfill {\bf Spring 2005 - Spring 2007}\\
+Investigated methods of promoting student learning in large college classes. 
+% Investigated methods of promoting student learning in large college classes. This work was coordinated by the University of Minnesota Center for Teaching and Learning (CTL). The grant researchers include instructors and teaching assistants from many disciplines and CTL staff.
+
+\vspace{-.1cm}
+{\em Bioinformatics Institute Summer Intern} \hfill {\bf Summer 2004}\\
+Developed an easy to use program to preform statistical analysis of gene expression microarray data.
+%As part of the University of Minnesota Bioinformatics Summer Internship program, I developed an easy to use program to preform statistical analysis of gene expression microarray data.
+
+\section{\sc Honors and Awards} 
+{\em Scolarships and Fellowships } \hfill {\bf Various}\\
+Wallin Scholarship, Lando Scholarship, University of Minnesota Department of Computer Science and Engineering Academic Excellence Fellowship
+
+\vspace{-.1cm}
+{\em Institute of Technology Teaching Assistant of the Year Award} \hfill {\bf Spring 2005}\\   
+Awarded to the top three University of Minnesota Institute of Technology (IT) teaching assistants as voted on by IT students.
+
+\ifthenelse{\boolean{isResume}}{}{
+\section{\sc Papers and Presentations}
+Pratik Jagtap,  Sricharan Bandhakavi,  LeeAnn Higgins, Thomas McGowan,  Rongxiao Sa,  Matthew Stone, John Chilton, Edgar Arriaga, Sean Seymour and Tim Griffin. Workflow for analysis of high mass accuracy salivary dataset using MaxQuant and ProteinPilot search algorithm. Proteomics (Accepted for publication in Proteomics).
+
+Robert R. Freimuth, Michael Meiners, John Chilton, Jim Johnson, Benjamin Lynch, Genevieve Melton, and Sheri Crow. Minnesota Congenital Heart Network: Construction and Implementation of an Interoperable Standards-Based Information Model. AMIA 2010 Annual Symposium. Washington D.C., USA. October, 2010.
+
+Getiria Onsongo, Matthew Stone, Susan Van Riper, John Chilton, B. Wu, LeeAnn Higgins, T. Lund, John Carlis, and Tim Griffin. LTQ-iQuant: A freely available software pipeline for automated and accurate protein quantification of isobaric tagged peptide data from LTQ instruments. Proteomics. August, 2010.
+
+Maria Gini, John Chilton, and Murray Jensen. Creating Cooperative Competition: Learning Games for the Classroom. Academy of Distinguished Teachers Conference. Minneapolis, MN, USA. April 2007.
+
+John Chilton and Maria Gini. Using the AIBOs in a CS1 Course. AAAI Spring Symmposium - Robots and Robot Venues: Resources for AI Education. Palo Alto, CA, USA. March, 2007.
+
+John Chilton and Maria Gini. Learning Games: Creating Cooperative Competition. The Collaboration for the Advancement of College Teaching and Learning. Bloomington, MN, USA. November, 2006.
+
+\section{\sc Service}
+Reviewer for:
+\begin{list1}
+\item[] IEEE International Conference on Robotics and Automation (ICRA), 2006
+\item[] Robotics: Science and Systems (RSS),  2006
+\end{list1}
+}
+
+\section{\sc Activities}
+{\em University of Minnesota ACM Programming Team} \hfill {\bf 2002-2005}\\   
+
+%{\em Open Source Developer} \hfill {\bf Various Times}
+%\begin{list1}
+%http://code.google.com/p/spring-collections/
+
+% \section{\sc Teaching Enrichment}
+% Attended University of Minnesota Teaching Enrichment sessions on the following topics:
+% \begin{list1}
+% \item[] Presenting Content
+% \item[] Working with Non-Native Speakers
+% \item[] Effective Online Discussions
+% \item[] Power of Play in Teaching and Learning
+% \item[] Interactive Lectures
+% \item[] Improving Your Teaching
+% \item[] PowerPoint Reconsidered
+% \end{list1}
+\vspace{-.3cm}
+\section{\sc Computer Skills} 
+\begin{list2}
+\item Java Experience: Hibernate, Java Persistence API (JPA), Spring, Spring Security, GWT, Jenkins, Ant,
+CXF, TestNG, JUnit, EasyMock, Android, JAXB, H2, Axis, Globus, caGrid
+\item Web Experience: HTML, CSS, JavaScript, jQuery, jQuery UI, CoffeeScript, Sass
+\item Database Experience: MySQL, PostgreSQL, Oracle, Microsoft SQL Server
+\item System Administration: Puppet, OpenStack, Apache, Tomcat, iptables, nagios, collectl
+\item Version Control: Git, Mercurial, Subversion
+\item Other Languages: Python, Ruby, C, C++, Scheme, Groovy, PHP, Clojure, Matlab, Haskell, R, \LaTeX
+\item Operating Systems: Linux (Ubuntu, Debian, and CentOS), Windows
+\item Certifications: Sun Certified Java Programmer
+% \item Programming Toolkits and Libraries: POSIX, Adapative Communication Environment (ACE) programming toolkit, C++ standard template library, MPI parallel processing library, Tk toolkit 
+%
+\end{list2}
+
+\end{resume}
+\end{document}
